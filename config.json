@@ -1,0 +1,18 @@
+{
+  "processes": [
+    { "id": 0, "name": "order_service",   "host": "127.0.0.1", "port": 5000 },
+    { "id": 1, "name": "payment_service", "host": "127.0.0.1", "port": 5001 },
+    { "id": 2, "name": "restaurant",      "host": "127.0.0.1", "port": 5002 },
+    { "id": 3, "name": "delivery_partner","host": "127.0.0.1", "port": 5003 }
+  ],
+
+  "link_delays": {
+    "2->3": 2.0
+  },
+
+  "start_delay": 3.0,
+  "run_seconds": 16,
+  "snapshot_initiator": 0,
+  "snapshot_delay_after_dispatch": 1.5,
+  "output_dir": "./out"
+}
