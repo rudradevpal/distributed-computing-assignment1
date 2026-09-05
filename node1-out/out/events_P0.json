@@ -1,0 +1,116 @@
+{
+  "process_id": 0,
+  "process_name": "order_service",
+  "final_state": {
+    "orders_placed": 1,
+    "orders_completed": 1,
+    "sent_ids": [
+      "P0-1",
+      "P0-2"
+    ],
+    "received_ids": [
+      "P1-1",
+      "P3-4"
+    ]
+  },
+  "final_vc": [
+    6,
+    3,
+    3,
+    4
+  ],
+  "events": [
+    {
+      "process_id": 0,
+      "process_name": "order_service",
+      "seq": 1,
+      "kind": "INTERNAL",
+      "label": "ORDER_RECEIVED",
+      "vc": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "wall_offset": 30.032
+    },
+    {
+      "process_id": 0,
+      "process_name": "order_service",
+      "seq": 2,
+      "kind": "SEND",
+      "label": "PAY_REQUEST -> P1",
+      "vc": [
+        2,
+        0,
+        0,
+        0
+      ],
+      "wall_offset": 30.032,
+      "msg_id": "P0-1",
+      "peer": 1
+    },
+    {
+      "process_id": 0,
+      "process_name": "order_service",
+      "seq": 3,
+      "kind": "RECEIVE",
+      "label": "PAY_OK <- P1",
+      "vc": [
+        3,
+        3,
+        0,
+        0
+      ],
+      "wall_offset": 30.035,
+      "msg_id": "P1-1",
+      "peer": 1
+    },
+    {
+      "process_id": 0,
+      "process_name": "order_service",
+      "seq": 4,
+      "kind": "SEND",
+      "label": "ORDER_DISPATCH -> P2",
+      "vc": [
+        4,
+        3,
+        0,
+        0
+      ],
+      "wall_offset": 30.035,
+      "msg_id": "P0-2",
+      "peer": 2
+    },
+    {
+      "process_id": 0,
+      "process_name": "order_service",
+      "seq": 5,
+      "kind": "RECEIVE",
+      "label": "DELIVERED <- P3",
+      "vc": [
+        5,
+        3,
+        3,
+        4
+      ],
+      "wall_offset": 32.543,
+      "msg_id": "P3-4",
+      "peer": 3
+    },
+    {
+      "process_id": 0,
+      "process_name": "order_service",
+      "seq": 6,
+      "kind": "INTERNAL",
+      "label": "ORDER_CLOSED",
+      "vc": [
+        6,
+        3,
+        3,
+        4
+      ],
+      "wall_offset": 32.543
+    }
+  ]
+}

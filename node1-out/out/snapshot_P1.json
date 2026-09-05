@@ -1,0 +1,25 @@
+{
+  "incoming_channels": {
+    "P0->P1": [],
+    "P2->P1": [],
+    "P3->P1": []
+  },
+  "initiator": false,
+  "local_state": {
+    "amount_collected": 450,
+    "received_ids": [
+      "P0-1"
+    ],
+    "sent_ids": [
+      "P1-1"
+    ]
+  },
+  "process_id": 1,
+  "process_name": "payment_service",
+  "vector_clock_at_snapshot": [
+    2,
+    3,
+    0,
+    0
+  ]
+}

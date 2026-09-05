@@ -1,0 +1,27 @@
+{
+  "incoming_channels": {
+    "P1->P0": [],
+    "P2->P0": [],
+    "P3->P0": []
+  },
+  "initiator": true,
+  "local_state": {
+    "orders_completed": 0,
+    "orders_placed": 1,
+    "received_ids": [
+      "P1-1"
+    ],
+    "sent_ids": [
+      "P0-1",
+      "P0-2"
+    ]
+  },
+  "process_id": 0,
+  "process_name": "order_service",
+  "vector_clock_at_snapshot": [
+    4,
+    3,
+    0,
+    0
+  ]
+}
