@@ -1,0 +1,14 @@
+[  0.00s] P0 order_service    | starting as order_service
+[  0.00s] P0 order_service    | network listening on 0.0.0.0:5000
+[  8.01s] P0 order_service    | INTERNAL ORDER_RECEIVED         vc=(1,0,0,0)
+[  8.01s] P0 order_service    | SEND     PAY_REQUEST -> P1      vc=(2,0,0,0)
+[  8.01s] P0 order_service    | connected to P1 (10.3.17.107:5001)
+[  8.01s] P0 order_service    | RECEIVE  PAY_OK <- P1           vc=(3,3,0,0)
+[  8.01s] P0 order_service    | SEND     ORDER_DISPATCH -> P2   vc=(4,3,0,0)
+[  9.52s] P0 order_service    | SNAPSHOT initiating global snapshot
+[  9.52s] P0 order_service    | SNAPSHOT local state recorded (initiator) state={"orders_completed": 0, "orders_placed": 1, "received_ids": ["P1-1"], "sent_ids": ["P0-1", "P0-2"]} vc=(4,3,0,0)
+[  9.52s] P0 order_service    | SNAPSHOT markers sent on all outgoing channels [1, 2, 3]
+[  9.52s] P0 order_service    | MARKER   received from P1
+[  9.52s] P0 order_service    | SNAPSHOT channel P1->P0 closed with 0 in-flight message(s)
+[ 30.14s] P0 order_service    | event log written to ./out/events_P0.json (4 events)
+[ 30.14s] P0 order_service    | WARNING snapshot did not complete on this process

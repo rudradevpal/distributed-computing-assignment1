@@ -1,0 +1,67 @@
+{
+  "process_id": 1,
+  "process_name": "payment_service",
+  "final_state": {
+    "amount_collected": 450,
+    "sent_ids": [
+      "P1-1"
+    ],
+    "received_ids": [
+      "P0-1"
+    ]
+  },
+  "final_vc": [
+    2,
+    3,
+    0,
+    0
+  ],
+  "events": [
+    {
+      "process_id": 1,
+      "process_name": "payment_service",
+      "seq": 1,
+      "kind": "RECEIVE",
+      "label": "PAY_REQUEST <- P0",
+      "vc": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "wall_offset": 20.306,
+      "msg_id": "P0-1",
+      "peer": 0
+    },
+    {
+      "process_id": 1,
+      "process_name": "payment_service",
+      "seq": 2,
+      "kind": "INTERNAL",
+      "label": "PAYMENT_VALIDATED",
+      "vc": [
+        2,
+        2,
+        0,
+        0
+      ],
+      "wall_offset": 20.306
+    },
+    {
+      "process_id": 1,
+      "process_name": "payment_service",
+      "seq": 3,
+      "kind": "SEND",
+      "label": "PAY_OK -> P0",
+      "vc": [
+        2,
+        3,
+        0,
+        0
+      ],
+      "wall_offset": 20.306,
+      "msg_id": "P1-1",
+      "peer": 0
+    }
+  ]
+}

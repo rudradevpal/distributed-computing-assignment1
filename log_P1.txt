@@ -1,0 +1,11 @@
+[  0.00s] P1 payment_service  | starting as payment_service
+[  0.00s] P1 payment_service  | network listening on 0.0.0.0:5001
+[ 20.31s] P1 payment_service  | RECEIVE  PAY_REQUEST <- P0      vc=(2,1,0,0)
+[ 20.31s] P1 payment_service  | INTERNAL PAYMENT_VALIDATED      vc=(2,2,0,0)
+[ 20.31s] P1 payment_service  | SEND     PAY_OK -> P0           vc=(2,3,0,0)
+[ 20.31s] P1 payment_service  | connected to P0 (10.3.17.107:5000)
+[ 21.81s] P1 payment_service  | MARKER   received from P0
+[ 21.81s] P1 payment_service  | SNAPSHOT local state recorded (first marker, from P0) state={"amount_collected": 450, "received_ids": ["P0-1"], "sent_ids": ["P1-1"]} vc=(2,3,0,0)
+[ 21.81s] P1 payment_service  | SNAPSHOT markers sent on all outgoing channels [0, 2, 3]
+[ 30.02s] P1 payment_service  | event log written to ./out/events_P1.json (3 events)
+[ 30.02s] P1 payment_service  | WARNING snapshot did not complete on this process
