@@ -12,8 +12,8 @@
     "2->3": 2.0
   },
 
-  "start_delay": 8.0,
-  "run_seconds": 30,
+  "start_delay": 20.0,
+  "run_seconds": 120,
   "snapshot_initiator": 0,
   "snapshot_delay_after_dispatch": 1.5,
   "output_dir": "./out"
