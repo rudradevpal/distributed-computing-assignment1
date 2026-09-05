@@ -1,0 +1,37 @@
+{
+  "incoming_channels": {
+    "P0->P3": [],
+    "P1->P3": [],
+    "P2->P3": [
+      {
+        "dst": 3,
+        "msg_id": "P2-1",
+        "payload": {
+          "order_id": 101
+        },
+        "src": 2,
+        "type": "FOOD_READY",
+        "vc": [
+          4,
+          3,
+          3,
+          0
+        ]
+      }
+    ]
+  },
+  "initiator": false,
+  "local_state": {
+    "deliveries_done": 0,
+    "received_ids": [],
+    "sent_ids": []
+  },
+  "process_id": 3,
+  "process_name": "delivery_partner",
+  "vector_clock_at_snapshot": [
+    0,
+    0,
+    0,
+    1
+  ]
+}

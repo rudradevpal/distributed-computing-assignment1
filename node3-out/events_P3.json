@@ -1,0 +1,81 @@
+{
+  "process_id": 3,
+  "process_name": "delivery_partner",
+  "final_state": {
+    "deliveries_done": 1,
+    "sent_ids": [
+      "P3-4"
+    ],
+    "received_ids": [
+      "P2-1"
+    ]
+  },
+  "final_vc": [
+    4,
+    3,
+    3,
+    4
+  ],
+  "events": [
+    {
+      "process_id": 3,
+      "process_name": "delivery_partner",
+      "seq": 1,
+      "kind": "INTERNAL",
+      "label": "GPS_HEARTBEAT",
+      "vc": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "wall_offset": 0.503
+    },
+    {
+      "process_id": 3,
+      "process_name": "delivery_partner",
+      "seq": 2,
+      "kind": "RECEIVE",
+      "label": "FOOD_READY <- P2",
+      "vc": [
+        4,
+        3,
+        3,
+        2
+      ],
+      "wall_offset": 38.182,
+      "msg_id": "P2-1",
+      "peer": 2
+    },
+    {
+      "process_id": 3,
+      "process_name": "delivery_partner",
+      "seq": 3,
+      "kind": "INTERNAL",
+      "label": "PICKED_UP",
+      "vc": [
+        4,
+        3,
+        3,
+        3
+      ],
+      "wall_offset": 38.182
+    },
+    {
+      "process_id": 3,
+      "process_name": "delivery_partner",
+      "seq": 4,
+      "kind": "SEND",
+      "label": "DELIVERED -> P0",
+      "vc": [
+        4,
+        3,
+        3,
+        4
+      ],
+      "wall_offset": 38.182,
+      "msg_id": "P3-4",
+      "peer": 0
+    }
+  ]
+}
