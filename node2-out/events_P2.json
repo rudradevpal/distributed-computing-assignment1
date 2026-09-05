@@ -1,0 +1,68 @@
+{
+  "process_id": 2,
+  "process_name": "restaurant",
+  "final_state": {
+    "orders_in_kitchen": 0,
+    "orders_cooked": 1,
+    "sent_ids": [
+      "P2-1"
+    ],
+    "received_ids": [
+      "P0-2"
+    ]
+  },
+  "final_vc": [
+    4,
+    3,
+    3,
+    0
+  ],
+  "events": [
+    {
+      "process_id": 2,
+      "process_name": "restaurant",
+      "seq": 1,
+      "kind": "RECEIVE",
+      "label": "ORDER_DISPATCH <- P0",
+      "vc": [
+        4,
+        3,
+        1,
+        0
+      ],
+      "wall_offset": 38.338,
+      "msg_id": "P0-2",
+      "peer": 0
+    },
+    {
+      "process_id": 2,
+      "process_name": "restaurant",
+      "seq": 2,
+      "kind": "INTERNAL",
+      "label": "COOKING_DONE",
+      "vc": [
+        4,
+        3,
+        2,
+        0
+      ],
+      "wall_offset": 38.839
+    },
+    {
+      "process_id": 2,
+      "process_name": "restaurant",
+      "seq": 3,
+      "kind": "SEND",
+      "label": "FOOD_READY -> P3",
+      "vc": [
+        4,
+        3,
+        3,
+        0
+      ],
+      "wall_offset": 38.839,
+      "msg_id": "P2-1",
+      "peer": 3
+    }
+  ]
+}

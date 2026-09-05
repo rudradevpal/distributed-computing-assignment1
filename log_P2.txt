@@ -1,4 +1,17 @@
 [  0.00s] P2 restaurant       | starting as restaurant
 [  0.00s] P2 restaurant       | network listening on 0.0.0.0:5002
-[ 30.03s] P2 restaurant       | event log written to ./out/events_P2.json (0 events)
-[ 30.03s] P2 restaurant       | WARNING snapshot did not complete on this process
+[ 38.34s] P2 restaurant       | RECEIVE  ORDER_DISPATCH <- P0   vc=(4,3,1,0)
+[ 38.84s] P2 restaurant       | INTERNAL COOKING_DONE           vc=(4,3,2,0)
+[ 38.84s] P2 restaurant       | SEND     FOOD_READY -> P3       vc=(4,3,3,0)
+[ 38.84s] P2 restaurant       | connected to P3 (10.3.18.134:5003)
+[ 39.84s] P2 restaurant       | MARKER   received from P0
+[ 39.84s] P2 restaurant       | SNAPSHOT local state recorded (first marker, from P0) state={"orders_cooked": 1, "orders_in_kitchen": 0, "received_ids": ["P0-2"], "sent_ids": ["P2-1"]} vc=(4,3,3,0)
+[ 39.84s] P2 restaurant       | SNAPSHOT markers sent on all outgoing channels [0, 1, 3]
+[ 39.84s] P2 restaurant       | connected to P1 (10.3.17.107:5001)
+[ 39.84s] P2 restaurant       | connected to P0 (10.3.17.107:5000)
+[ 39.84s] P2 restaurant       | MARKER   received from P1
+[ 39.84s] P2 restaurant       | SNAPSHOT channel P1->P2 closed with 0 in-flight message(s)
+[ 39.84s] P2 restaurant       | MARKER   received from P3
+[ 39.84s] P2 restaurant       | SNAPSHOT channel P3->P2 closed with 0 in-flight message(s)
+[ 39.84s] P2 restaurant       | SNAPSHOT complete, written to ./out/snapshot_P2.json
+[300.14s] P2 restaurant       | event log written to ./out/events_P2.json (3 events)

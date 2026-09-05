@@ -1,0 +1,26 @@
+{
+  "incoming_channels": {
+    "P0->P2": [],
+    "P1->P2": [],
+    "P3->P2": []
+  },
+  "initiator": false,
+  "local_state": {
+    "orders_cooked": 1,
+    "orders_in_kitchen": 0,
+    "received_ids": [
+      "P0-2"
+    ],
+    "sent_ids": [
+      "P2-1"
+    ]
+  },
+  "process_id": 2,
+  "process_name": "restaurant",
+  "vector_clock_at_snapshot": [
+    4,
+    3,
+    3,
+    0
+  ]
+}
