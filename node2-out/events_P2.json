@@ -1,0 +1,17 @@
+{
+  "process_id": 2,
+  "process_name": "restaurant",
+  "final_state": {
+    "orders_in_kitchen": 0,
+    "orders_cooked": 0,
+    "sent_ids": [],
+    "received_ids": []
+  },
+  "final_vc": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "events": []
+}

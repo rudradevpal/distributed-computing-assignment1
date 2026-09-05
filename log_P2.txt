@@ -1,0 +1,4 @@
+[  0.00s] P2 restaurant       | starting as restaurant
+[  0.00s] P2 restaurant       | network listening on 0.0.0.0:5002
+[ 30.03s] P2 restaurant       | event log written to ./out/events_P2.json (0 events)
+[ 30.03s] P2 restaurant       | WARNING snapshot did not complete on this process
